@@ -6,9 +6,9 @@
     "paths": {
       "@app/*": ["src/*"],
       "@config/*": ["src/config/*"],
-      "@helper/*": ["src/helper/*"],
-      "@model/*": ["src/model/*"],
-      "@service/*": ["src/service/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
       "@controller/*": ["src/controller/*"]
     }
   },
