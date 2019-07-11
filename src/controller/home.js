@@ -2,7 +2,10 @@ const Usuario = require('@models/usuario');
 
 const HomeController = {
   helloWorld(req, res) {
-    res.send('Hello, World');
+    res.send(`Hello, World ${new Date()}`);
+  },
+  helloErro(req, res) {
+    res.sendError('OPS... teste exception', 500);
   },
   createUser(req, res) {
     const { nome, email, idade } = req.body;
