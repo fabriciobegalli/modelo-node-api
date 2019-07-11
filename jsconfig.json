@@ -8,6 +8,7 @@
       "@config/*": ["src/config/*"],
       "@helpers/*": ["src/helpers/*"],
       "@models/*": ["src/models/*"],
+      "@middleware/*": ["src/middleware/*"],
       "@services/*": ["src/services/*"],
       "@controller/*": ["src/controller/*"]
     }
