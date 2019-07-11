@@ -1,0 +1,7 @@
+{
+  "server": {
+    "started": "API started. Running on port ${port}.",
+    "failOnStart": "Error during Gateway API start: ${error}",
+    "hello": "Hello World! ${data}"
+  }
+}

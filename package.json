@@ -29,6 +29,7 @@
     "@app": "src/app.js",
     "@config": "src/config",
     "@helpers": "src/helpers",
+    "@lang": "src/lang",
     "@models": "src/models",
     "@middleware": "src/middleware",
     "@controller": "src/controller",

@@ -1,7 +1,7 @@
-const router = require('express').Router();
+const Router = require('express').Router();
 const HomeController = require('@controller/home');
 
-router.get('/', HomeController.helloWorld).post('/', HomeController.createUser);
-router.get('/erro', HomeController.helloErro);
+Router.get('/', HomeController.helloWorld).post('/', HomeController.createUser);
+Router.get('/erro', HomeController.helloErro);
 
-module.exports = router;
+module.exports = Router;

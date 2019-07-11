@@ -1,5 +1,7 @@
 const app = require('@app');
 const config = require('@config');
+const lang = require('@lang');
+const say = require('@helpers/say');
 
 module.exports = (err) => {
   console.clear();
@@ -8,12 +10,15 @@ module.exports = (err) => {
     console.log('Erro ao conectar DB');
     console.log(err);
   } else {
-    app.listen(config.app.port, (err) => {
+    const port = config.app.port || 5000;
+
+    app.listen(port, (err) => {
       if (err) {
-        return console.log(err);
+        say(lang.server.error, { error: err.message });
       }
 
-      console.log(`Start ON: http://localhost:${config.app.port}/`);
+      say(lang.server.started, { port });
+      console.log(`http://localhost:${config.app.port}/`);
     });
   }
 };

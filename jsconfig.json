@@ -7,6 +7,7 @@
       "@app/*": ["src/*"],
       "@config/*": ["src/config/*"],
       "@helpers/*": ["src/helpers/*"],
+      "@lang/*": ["src/lang/*"],
       "@models/*": ["src/models/*"],
       "@middleware/*": ["src/middleware/*"],
       "@services/*": ["src/services/*"],

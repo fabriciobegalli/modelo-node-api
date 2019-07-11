@@ -18,4 +18,5 @@ module.exports = {
       delayMs: 100,
     },
   },
+  lang: process.env.API_LANG || 'pt-br',
 };
