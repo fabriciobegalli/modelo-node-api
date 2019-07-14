@@ -4,7 +4,7 @@ const say = require('@helpers/say');
 
 const HomeController = {
   helloWorld(req, res) {
-    res.send(say(lang.server.hello, { date: new Date() }));
+    res.send(say(lang.server.hello, { data: new Date() }));
   },
   helloErro(req, res) {
     res.sendError('OPS... teste exception', 500);
